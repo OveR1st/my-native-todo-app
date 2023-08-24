@@ -1,24 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import { useState } from 'react'
+import { Button, StyleSheet, Text, View } from 'react-native'
 
-export default function App() {
-  const [count, setCount] = useState<number>(0)
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on !</Text>
-      <Text>{count}</Text>
-      <StatusBar style="auto" />
-      <Button title='TESTBTN' onPress={() => setCount(count + 1)}></Button>
-    </View>
-  );
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import App from './src/app'
+
+const Stack = createNativeStackNavigator()
+
+export default function AppRoot() {
+    return <App />
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
