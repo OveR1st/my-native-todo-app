@@ -1,13 +1,10 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import { View, ViewComponent } from 'react-native'
-import { RootStackParamList } from './routes'
+
 import { Home } from '../pages/home'
 import { Complete } from '../pages/complete'
-// import { AddTaskScreen } from "pages/add-task";
-// import { TasksScreen } from "pages/list-tasks";
-// import { TaskScreen } from "pages/view-task-details";
-// import { RootStackParamList } from "shared";
+
+import { RootStackParamList } from '../shared/routes'
 
 const RootStack = createNativeStackNavigator<RootStackParamList>()
 
