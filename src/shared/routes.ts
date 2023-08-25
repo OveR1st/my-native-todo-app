@@ -4,8 +4,8 @@ import type {
 } from '@react-navigation/native-stack'
 
 export type RootStackParamList = {
-    Home: undefined
-    Complete: undefined
+    HomeScreen: { id: string; tit: number }
+    CompleteScreen: undefined
 }
 
 export type ScreenProps<Screen extends keyof RootStackParamList> =

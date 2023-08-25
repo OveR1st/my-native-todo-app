@@ -1,8 +1,4 @@
-import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import App from './src/app'
-
-const Stack = createNativeStackNavigator()
+import App from 'app'
 
 export default function AppRoot() {
     return <App />

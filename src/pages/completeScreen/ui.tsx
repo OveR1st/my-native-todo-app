@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native'
-
-export const Complete = () => {
+import type { ScreenProps } from 'shared'
+export const CompleteScreen: React.FC<ScreenProps<'CompleteScreen'>> = () => {
     return (
         <View>
             <Text>COMPLETE</Text>
