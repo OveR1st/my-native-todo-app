@@ -11,18 +11,15 @@ const RootStack = createNativeStackNavigator<RootStackParamList>()
 export const Routing: React.FC = () => {
     return (
         <NavigationContainer>
-            <RootStack.Navigator initialRouteName="HomeScreen">
+            <RootStack.Navigator initialRouteName="Home">
                 <RootStack.Screen
-                    name="HomeScreen"
+                    name="Home"
                     component={HomeScreen}
                     options={{
                         headerShown: false,
                     }}
                 />
-                <RootStack.Screen
-                    name="CompleteScreen"
-                    component={CompleteScreen}
-                />
+                <RootStack.Screen name="Complete" component={CompleteScreen} />
                 {/* <RootStack.Group
                 screenOptions={{
                     presentation: 'transparentModal',
